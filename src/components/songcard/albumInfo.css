@@ -1,0 +1,53 @@
+.albumInfo-card{
+    margin-top: 15px;
+
+
+}
+.albumInfo-card p{
+    margin-left: 20px !important ;
+}
+.ablumName-container {
+    width: 100%;
+    max-width: 400px; /* Limit so it doesn’t overflow */
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    white-space: nowrap;
+    position: relative;
+    margin-left: 20px;
+  }
+  .marquee {
+    display: inline-block;
+    animation: marquee 15s linear infinite;
+    will-change: transform;
+    padding-left:100% ;
+  }
+  
+@keyframes marquee{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-50%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+} 
+.album-info{
+    font-size: 14px;
+    font-weight: 500 ;
+    color: rgb(243, 209, 164);
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.album-release{
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(174, 152, 126);
+    margin-top:10px;
+}
